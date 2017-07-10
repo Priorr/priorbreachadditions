@@ -5,7 +5,7 @@ if (SERVER) then
 	OrderVectors( pos1, pos2 )
 	hook.Add( "PlayerSpray", "DisableSprayInPD", function( ply )
 		if ply:GetPos():WithinAABox( pos1, pos2 ) then 
-			ply:PrintMessage( 3, "[PBA] You cant spray in the Pocket Dimension.")
+		ply:PrintMessage( 3, "[PBA] You cant spray in the Pocket Dimension.")
 		return true end
 	end)
 end
